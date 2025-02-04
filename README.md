@@ -1,4 +1,4 @@
-# Hive to Unity Catalog Migration
+# Migration from Hive MetaStore to Unity Catalog 
 
 This project automates the migration of **external tables** from **Hive Metastore** to **Unity Catalog** in **Databricks**. The focus is on migrating **external tables** using the **SYNC** operation to update schema definitions in Unity Catalog from Hive Metastore. The migration process supports moving data across multiple layers of Delta Lake (Stage, Bronze, Silver, and Gold).
 
