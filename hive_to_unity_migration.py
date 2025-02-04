@@ -54,4 +54,7 @@ def migrate_schema(schema, layer='stage'):
     sync_schema(schema)
     print(f"Migration completed for schema: {schema} at layer: {layer}")
 
-migrate_schema(schema, layer)
+if __name__ == "__main__":
+    schema = "example_schema"  # Replace with the schema you want to migrate
+    layer = "bronze"  # Choose the data layer (stage, bronze, silver, or gold)
+    migrate_schema(schema, layer)
